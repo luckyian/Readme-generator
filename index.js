@@ -1,7 +1,8 @@
 var inquirer = require("inquirer");
+var fs = require("fs");
 
 // array of questions for user
-const questions = ["What is your gitHub user name?", "What is your email address?", "What is the title of your project?" "Please describe your project:", "Please describe installation procedures:",
+const questions = ["What is your gitHub user name?", "What is your email address?", "What is the title of your project?", "Please describe your project:", "Please describe installation procedures:",
     "Please enter usage instructions:", "Any contribution guidelines?", "Please list any test instructions"
 
 ];
@@ -56,12 +57,12 @@ inquirer
             type: "input",
             message: questions[7],
             name: "test"
-        },
-    ]).then(function (response) {
+        }]).then(function (response) {
+            
 
 
         // function to write README file
-        function writeToFile(fileName, data) {
+        function writeToFile(response.title, data) {
         }
     });
 
