@@ -10,7 +10,7 @@ unlicense = "https://img.shields.io/badge/license-Unlicense-blue.svg";
 function generateMarkdown(data) {
   return `# ${data.title !["License"](license)}
 
-  ## Table of Contents
+  ## **Table of Contents**
   1. Descriction
   2. Installation
   3. Usage
@@ -18,18 +18,22 @@ function generateMarkdown(data) {
   5. Tests
   6. Questions
   
-  ## Description
+  > ## **Description**
   ### ${data.description}
-  ## Installation
+ 
+  > ## **Installation**
   ### ${data.install}
-  ## Usage
+ 
+  > ## **Usage**
   ### ${data.usage}
-  ## Contributing
+  
+  > ## **Contributing**
   ### ${data.contribution}
-  ##Tests
+ 
+  > ## **Tests**
   ### ${data.test}
 
-  ### Questions?
+  ### *Questions?*
   #### Email contact: ${data.email}
   #### GitHub: ${[data.username]("https://github.com/" + data.username)}
    
