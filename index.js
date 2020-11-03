@@ -74,15 +74,15 @@ inquirer
             ]
           }
     ]).then(function(data) {
-        var readMedata = data.name.toLowerCase().split(' ').join('') + ".json";
+        // var readMedata = data.name.toLowerCase().split(' ').join('') + ".json";
 
-        fs.writeFile(readMedata, JSON.stringify(data, null, '\t'), function(err) {
+        // fs.writeFile(readMedata, JSON.stringify(data, null, '\t'), function(err) {
       
-          if (err) {
-            return console.log(err);
-          }
+        //   if (err) {
+        //     return console.log(err);
+        //   }
       
-          console.log("Success!");
+        //   console.log("Success!");
       
 
 
