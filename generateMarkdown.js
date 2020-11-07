@@ -1,14 +1,7 @@
-var fs = require("fs");
-apache = "https://img.shields.io/badge/License-Apache%202.0-blue.svg";
-boost = "https://img.shields.io/badge/License-Boost%201.0-lightblue.svg";
-gPLv3  ="https://img.shields.io/badge/License-GPLv3-blue.svg";
-mIT = "https://img.shields.io/badge/License-MIT-yellow.svg";
-mozilla = "https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg";
-unlicense = "https://img.shields.io/badge/license-Unlicense-blue.svg";
-
 // function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title !["License"](license)}
+  return `# ${data.title} 
+  !["License"](${data.licenseBadge})
 
   ## **Table of Contents**
   1. Descriction
