@@ -21,7 +21,7 @@ function generateMarkdown(data) {
   > ## **Usage**
   ### ${data.usage}
 
-  >## **License**
+  > ## **License**
   ### You have choosen the ${data.license} license.  For further information on licenses please visit [Choose a License](https://choosealicense.com/)
   
   > ## **Contributing**
@@ -30,7 +30,7 @@ function generateMarkdown(data) {
   > ## **Tests**
   ### ${data.test}
 
-  ### *Questions?*
+  > ### *Questions?*
    
   #### GitHub:  ${("https://github.com/" + data.username)}
   #### For further information and any questions feel free to contact at the following e-mail: ${data.email}
