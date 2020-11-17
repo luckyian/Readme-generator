@@ -4,12 +4,13 @@ function generateMarkdown(data) {
   !["${data.license}"](${data.licenseBadge})
 
   ## **Table of Contents**
-  1. Description
-  2. Installation
-  3. Usage
-  4. Contributing
-  5. Tests
-  6. Questions
+  1. [Description](#Description)
+  2. [Installation](#Installation)
+  3. [Usage](#Usage)
+  4. [License](#License)
+  5. [Contributing](#Contributing)
+  6. [Tests](#Tests)
+  7. [Questions](#Questions)
   
   > ## **Description**
   ### ${data.description}
@@ -19,6 +20,9 @@ function generateMarkdown(data) {
  
   > ## **Usage**
   ### ${data.usage}
+
+  >## **License**
+  ### You have choosen the ${data.license} license.  For further information on licenses please visit [Choose a License](https://choosealicense.com/)
   
   > ## **Contributing**
   ### ${data.contribution}
@@ -27,8 +31,9 @@ function generateMarkdown(data) {
   ### ${data.test}
 
   ### *Questions?*
-  #### Email contact: ${data.email}
+   
   #### GitHub:  ${("https://github.com/" + data.username)}
+  #### For further information and any questions feel free to contact at the following e-mail: ${data.email}
    
 
 
