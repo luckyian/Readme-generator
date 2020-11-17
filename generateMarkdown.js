@@ -1,10 +1,10 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title} 
-  !["License"](${data.licenseBadge})
+  !["${data.license}"](${data.licenseBadge})
 
   ## **Table of Contents**
-  1. Descriction
+  1. Description
   2. Installation
   3. Usage
   4. Contributing
@@ -28,7 +28,7 @@ function generateMarkdown(data) {
 
   ### *Questions?*
   #### Email contact: ${data.email}
-  #### GitHub: ${[data.username]("https://github.com/" + data.username)}
+  #### GitHub:  ${("https://github.com/" + data.username)}
    
 
 
