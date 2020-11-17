@@ -125,7 +125,7 @@ function init() {
                     return console.log(err);
                 }
 
-                console.log("Success!");
+                console.log("Success! Check your folder for README.");
 
 
 
