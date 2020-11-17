@@ -1,5 +1,7 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
+
+  // Using data generated from inquirer in the index.js file, populates data based on user input
   return `# ${data.title} 
   !["${data.license}"](${data.licenseBadge})
 
@@ -41,5 +43,5 @@ function generateMarkdown(data) {
 
 `;
 }
-
+// Allows file to be exported and used in index.js to create README file
 module.exports = generateMarkdown;
