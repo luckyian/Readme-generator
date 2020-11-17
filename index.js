@@ -1,6 +1,6 @@
-var inquirer = require("inquirer");
-var fs = require("fs");
-let generateMD = require("./JS/generateMarkdown.js")
+const inquirer = require("inquirer");
+const fs = require("fs");
+const generateMD = require("./JS/generateMarkdown.js")
 
 // array of questions for user
 const questions = ["What is your gitHub user name?", "What is your email address?", "What is the title of your project?", "Please describe your project:", "Please describe installation procedures:",
@@ -14,7 +14,7 @@ function init() {
 
 
 
-
+// Inquier prompt to collect data using question array
     inquirer
         .prompt([
             {
@@ -85,10 +85,7 @@ function init() {
             let userdata = { ...data };
             userdata.licenseBadge = "";
             
-            
-            console.log(userdata.license);
-
-            
+            // Function to add license badge to top of README using inputed user data
            
             function licenseIcon(license) { 
                 if (license === "MIT") {
@@ -117,14 +114,14 @@ function init() {
 
             
 
-
+            // Uses generateMD to create markdown file using user data from inquirer npm
             fs.writeFile("README.md", generateMD(userdata), function (err) {
 
                 if (err) {
 
                     return console.log(err);
                 }
-
+                // Lets user know they got what they came for
                 console.log("Success! Check your folder for README.");
 
 
