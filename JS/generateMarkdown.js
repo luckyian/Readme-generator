@@ -32,7 +32,7 @@ function generateMarkdown(data) {
 
   > ### *Questions?*
    
-  #### GitHub:  ${("https://github.com/" + data.username)}
+  #### GitHub: ["${data.username}"](${"https://github.com/" + data.username}) 
   #### For further information and any questions feel free to contact at the following e-mail: ${data.email}
    
 

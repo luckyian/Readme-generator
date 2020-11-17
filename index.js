@@ -1,6 +1,6 @@
 var inquirer = require("inquirer");
 var fs = require("fs");
-let generateMD = require("./generateMarkdown.js")
+let generateMD = require("./JS/generateMarkdown.js")
 
 // array of questions for user
 const questions = ["What is your gitHub user name?", "What is your email address?", "What is the title of your project?", "Please describe your project:", "Please describe installation procedures:",
@@ -81,10 +81,10 @@ function init() {
             }
         ]).then(function (data) {
             
-            console.log(data);
+           
             let userdata = { ...data };
             userdata.licenseBadge = "";
-            console.log(userdata);
+            
             
             console.log(userdata.license);
 
