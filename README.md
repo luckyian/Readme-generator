@@ -19,6 +19,7 @@
   4. jQuery
  
   > ## **Usage**
+  ### !["QuickREADmeGenerator](./Assets/Trimmed-Readme.gif)
   ### !["ReadMegenerator"](https://drive.google.com/file/d/1H08DNrFMPgiRWlyww9s9oWhsghmv8urx/view)
 
 
